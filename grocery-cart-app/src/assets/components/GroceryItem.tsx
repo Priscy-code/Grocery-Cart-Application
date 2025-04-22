@@ -8,7 +8,7 @@ const GroceryItem = ({addToCart, item}: GroceryItemProps) => {
       <p className="text-green-600 font-bold my-2">${item.price.toFixed(2)}</p>
       <button
         onClick={() => addToCart(item)}
-        className="mt-auto bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded-lg transition"
+        className="mt-auto bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-lg transition"
       >
         Add to Cart
       </button>
