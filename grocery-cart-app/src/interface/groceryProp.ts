@@ -2,6 +2,7 @@ export interface GroceryProp {
   id: number;
   name: string;
   price: number;
+  image: string
 }
 
 export interface NotificationState {

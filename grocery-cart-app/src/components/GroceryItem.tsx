@@ -4,6 +4,7 @@ import { GroceryItemProps } from '../interface/groceryProp'
 const GroceryItem = ({addToCart, item}: GroceryItemProps) => {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md flex flex-col">
+      <img src={item.image} alt="" className='w-42 h-32 object-cover' />
       <h3 className="font-semibold text-lg">{item.name}</h3>
       <p className="text-green-600 font-bold my-2">${item.price.toFixed(2)}</p>
       <button
