@@ -3,9 +3,10 @@ import { CartItemProps } from '../interface/groceryProp'
 
 const CartItemComponent = ({item, removeFromCart, updateQuantity,}:CartItemProps) => {
   return (
-    <div className="flex items-center justify-between !bg-white p-3 rounded-md shadow-sm">
+    <div className="flex items-center justify-between !bg-white p-3 rounded-md shadow-sm gap-4">
       <div className="flex items-center">
         <div>
+          <img src={item.image} alt="" />
           <h4 className="font-medium">{item.name}</h4>
           <p className="text-sm text-gray-600">${item.price.toFixed(2)} each</p>
         </div>
